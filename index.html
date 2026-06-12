@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <div class="barra">
+                    <ul>
+                        <div class="contenido-barra">
+                            <li ><a href="#animaciones">Animaciones</a></li>
+                            <li ><a href="#transiciones">Transiciones</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-contenido">
+                <h5>Animaciones - Transiciones</h5>
+            </div>
+
+        </section>
+        <section  class="section-body">
+            <div  id="animaciones" class="header-body">
+                <h5 >Animaciones</h5>
+            </div>
+            <div class="teoria">
+                <div class="sintaxis">
+                    <div class="etiqueta"><span>large</span></div>
+                    <p>
+                        animation-name <br>
+                        animation-duration <br>
+                        animation-timing-function <br>
+                        animation-delay <br>
+                        animation-iteration-count <br>
+                        animation-direction <br>
+                        animation-fill-mode <br>
+                        animation-play-state
+                    </p>
+                </div>
+                <div class="sintaxis">
+                    <div class="etiqueta"><span>short</span></div>
+                    <div class="tcontenido">
+                        <p>
+                            animation: <br>
+                            nombre <br>
+                            duracion <br>
+                            timing-function <br>
+                            delay <br>
+                            iteration-count <br>
+                            direction <br>
+                            fill-mode;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content">
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-1"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>.cuadrado-1{<br>
+                                    height: 100px;<br>
+                                    width: 100px;<br>
+                                    background-color: #ff9f43;<br>
+                                    animation: desplazamiento ease 1s infinite alternate-reverse;<br>
+                                    }</p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    @keyframes desplazamiento{<br>
+                                    0%{<br>
+                                    transform: translateX(0);
+                                    }<br>
+                                    50%{<br>
+                                    transform: translateX(100px);
+                                    }<br>
+                                    100%{<br>
+                                    transform: translateX(200px);
+                                    }<br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-2"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>.cuadrado-2{<br>
+                                    height: 100px;<br>
+                                    width: 100px;<br>
+                                    border-radius: 100px;<br>
+                                    background-color: #ff9f43;<br>
+                                    animation: desplazamiento-escala ease 1s infinite alternate-reverse;<br>
+                                    }
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    @keyframes desplazamiento-escala{<br>
+                                    0%{<br>
+                                    transform: translateX(0) scale(1);<br>
+                                    }<br>
+                                    50%{<br>
+                                    transform: translateX(100px) scale(1.5);<br>
+                                    }<br>
+                                    100%{<br>
+                                    transform: translateX(200px) scale(2.5);<br>
+                                    }<br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-3"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-3{<br>
+                                    height: 100px;<br>
+                                    width: 100px;<br>
+                                    background-color: #ff9f43;<br>
+                                    animation: desplazamiento-giro ease 2s infinite alternate-reverse ;<br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    @keyframes desplazamiento-giro {<br>
+                                    0%{<br>
+                                    transform: translateX(0px) rotate(0deg); <br>
+                                    } <br>
+                                    20%{ <br>
+                                    transform: translateX(0px) rotate(-360deg);<br>
+                                    } <br>
+                                    40%{ <br>
+                                    transform: translateX(0px);<br>
+                                    } <br>
+                                    60%{ <br>
+                                    transform: translateX(200px); <br>
+                                    } <br>
+                                    80%{ <br>
+                                    transform: translateX(100px) rotate(0deg); <br>
+                                    } <br>
+                                    100%{ <br>
+                                    transform: translateX(100px) rotate(-360deg) ; <br>
+                                    } <br>
+                                    }
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="transiciones" class="header-body">
+                <h5 >Transiciones</h5>
+            </div>
+            <div class="teoria">
+                <div class="sintaxis">
+                    <div class="etiqueta"><span>large</span></div>
+                    <p>
+                        transition-property: <br>
+                        transition-duration: <br>
+                        transition-timing-function: <br>
+                        transition-delay:  <br>
+                    </p>
+                </div>
+                <div class="sintaxis">
+                    <div class="etiqueta"><span>short</span></div>
+                    <div class="tcontenido">
+                        <p>
+                            transition: <br>
+                            nombre <br>
+                            duracion <br>
+                            timing-function <br>
+                            delay 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content">
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-4"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>.cuadrado-4{<br>
+                                    height: 100px; <br>
+                                    width: 100px; <br>
+                                    background-color: #ff9f43; <br>
+                                    transition: all 2s ease ; <br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-4:hover{ <br>
+                                    width: 200px; <br>
+                                    background-color: #00d2d3; <br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-5"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-5{ <br>
+                                    height: 100px; <br>
+                                    width: 100px; <br>
+                                    background-color: #ff9f43; <br>
+                                    transition: all 2s ease ; <br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-5:not(:hover){ <br>
+                                    width: 200px; <br>
+                                    border-radius: 100px; <br>
+                                    background-color: #ff6b6b; <br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row-card">
+                    <div class="preview-animation">
+                        <div class="cuadrado-6"></div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-6{ <br>
+                                    height: 100px; <br>
+                                    width: 100px; <br>
+                                    background-color: #ff9f43; <br>
+                                    transition: transform 2s ease ; <br>
+                                    }
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="code">
+                            <div class="etiqueta"><span>code</span></div>
+                            <div class="code-contenido">
+                                <p>
+                                    .cuadrado-6:hover{ <br>
+                                    transform:translateX(100px);<br>
+                                    }
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
